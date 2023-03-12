@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food web</title>
+    <link rel="stylesheet" href="css/food.css">
+    <link rel="shortcut icon" href="image/logo.png">
+</head>
+<body>
+    <div class="nav">
+    <div class="logo"><b>MYFOOD</b></div>
+    <div class="navlinks">
+        <ul>
+            <li><a class="navborder"href="#">HOME</a></li>
+            <li><a class="navborder"href="#">ABOUT</a></li>
+            <li><a class="navborder"href="#">CONTACT</a></li>
+            <li><a class="navborder"href="#">FOOD GALLERY</a></li>
+            <li><a class="navborder"href="#">BLOG</a></li>
+            <li><a class="navborder"href="#">LOGIN</a></li>
+           
+        </ul>
+    </div>
+    </div>
+    <div class="container">
+        <h1><marquee>Order Your Favourite Food At Your DoorStep</marquee></h1>
+
+        <p>more extra better more extra better more extra better more extra.
+            <br></br>
+            better more extra better more extra better more extra better more extra better.<br></br>
+             more extra better more extra better more extra better more extra better more extra better more extra better more extra better
+        </p>
+        <button class="order"><a href="">ORDER</a></button>
+    </div>
+
+    <div class="container2">
+        <h1>MY FOOD</h1>
+        <img class="pizza" src="image/d.jpg" alt="d.jpg" width="500px">
+        <img class="pizza"    src="image/a.jpg" width="500px">
+        <div class="Aboutmyfood">
+            <h3><b>my food</b></h3>
+            More extra better more extra better more extra better more extra.
+            <br></br>
+            better more extra better more extra better more extra better more extra better.<br></br>
+             more extra better more extra better more extra better more extra better more extra better more extra better more extra better
+
+        </div>
+    </div>
+    <div class="container3">
+        <h3>Our best combos</h3>
+        <div class="combos">
+            <div class="combo1">
+                <h2>$99</h2>
+                <img src="image/c.jpg" alt="image.jpg" width="300px" style = "margin:30px 0 30px;">
+
+                <ul style="list-style-type:circle">
+                    <li>Jellof Rice</li>
+                    <li>White Rice and stew</li>
+                    <li>Fried rice</li>
+                    <button class="buy"><a href="#">Order Now</a></button>
+                </ul>
+            </div>
+        
+            <div class="combo2">
+                <h2>$199</h2>
+                <img src="image/e.jpeg" alt="image.jpg" width="300px" style = "margin:30px 0 30px;">
+                <ul style="list-style-type:circle">
+                    <li>Spageti</li>
+                    <li>Spageti and MeetBalls</li>
+                    <li>Small Pepsi </li>
+                    <button class="buy"><a href="#">Order Now</a></button>
+                </ul>
+            </div>
+            <div class="combo3">
+                <h2>$299</h2>
+                <img src="image/swallow.jpg" alt="image.jpg" width="300px" style = "margin:30px 0 30px;">
+                <ul style="list-style-type:circle">
+                    <li>Swallow and Egusi</li>
+                    <li>Fufu and Pounded Yam</li>
+                    <li>Akpu and soup with meat</li>
+                    <button class="buy"><a href="#">Order Now</a></button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact">
+        <h3>Have any problem with Your order feel free to contact us</h3>
+        <div class="form">
+            <input type="text" placeholder="Name" is="Name">
+            <input type="email" placeholder="Email" is="Email">
+            <input type="number" placeholder="Mobile number" id="Mobile number">
+            <textarea placeholder="Your massage here" id="textarea" row="50" cols="10"></textarea>
+            <button class="query"><a href="#">Submit query</a></button>
+
+        </div>
+    </div>
+    <div class="footer">
+    <div class="footer1"><h1>MYFOOD</h1></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="footer2">
+    <h2>services</h2>
+        <ul>
+            <li><a href="#">Sign UP</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Order Food</a></li>
+            <li><a href="#">Affliate</a></li>
+        </ul>
+    </div>
+        <div class="footer3">
+        <h2>services</h2>
+        <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Private policy</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </ul>
+    </div>
+        <div class="credit"><p>Copyright 2023 MYFOOD all rights reserved</p></div>
+
+    </div> 
+    <script>
+ let indexvalue = 0;
+
+function slideshow(){
+setTimeout(slideshow, 2500);
+let x;
+const img = document.querySelectorAll("pizza");
+for(x = 0; x < img.length; x++){
+img[x].style.display = "none";
+}
+indexvalue++;
+if(indexvalue > img.length){indexvalue = 1}
+img[indexvalue -1].style.display = "block";
+}
+slideshow();
+    </script>
+</body>
+</html>
